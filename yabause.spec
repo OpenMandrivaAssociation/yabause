@@ -17,7 +17,7 @@ BuildRequires:	mesaglut-devel
 %else
 BuildRequires:	MesaGLUT-devel
 %endif
-BuildRequires:	libjsw-devel
+BuildRequires:	jsw-devel
 BuildRequires:	desktop-file-utils
 # for the translations
 BuildRequires:	mini18n-devel
