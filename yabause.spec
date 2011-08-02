@@ -1,6 +1,6 @@
 Name:			yabause
 Version:		0.9.10
-Release:		%mkrel 2
+Release:		%mkrel 3
 
 Summary:	Yabause - A Saturn emulator
 License:	GPLv2+
