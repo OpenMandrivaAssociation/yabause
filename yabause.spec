@@ -9,6 +9,7 @@ URL:		http://yabause.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/yabause/%{name}-%{version}.tar.gz
 Patch0:		yabause-0.9.11-sformat.patch
 Patch1:		yabause-0.9.11-link.patch
+Patch2:		yabause-0.9.11-lib64.patch
 BuildRequires:	cmake
 BuildRequires:	SDL-devel
 BuildRequires:	mesaglut-devel
@@ -74,6 +75,9 @@ Close and restart yabause-qt.
 %setup -q
 %patch0 -p1 -b .sfmt
 %patch1 -p1 -b .link
+%ifarch x86_64
+%patch2 -p1 -b .lib64
+%endif
 
 %build
 cmake . -DCMAKE_INSTALL_PREFIX:PATH=/usr
