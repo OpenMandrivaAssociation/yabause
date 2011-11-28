@@ -8,12 +8,15 @@ Group:		Emulators
 URL:		http://yabause.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/yabause/%{name}-%{version}.tar.gz
 Patch0:		yabause-0.9.11-sformat.patch
+Patch1:		yabause-0.9.11-link.patch
 BuildRequires:	cmake
 BuildRequires:	SDL-devel
 BuildRequires:	mesaglut-devel
 BuildRequires:	jsw-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	openssl-devel
+BuildRequires:	openal-devel
+BuildRequires:	doxygen
 # for the translations
 BuildRequires:	mini18n-devel
 # for gtk interface
@@ -70,6 +73,7 @@ Close and restart yabause-qt.
 %prep
 %setup -q
 %patch0 -p1 -b .sfmt
+%patch1 -p1 -b .link
 
 %build
 cmake . -DCMAKE_INSTALL_PREFIX:PATH=/usr
