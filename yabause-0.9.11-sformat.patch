@@ -1,0 +1,12 @@
+diff -urN yabause-0.9.11/src/qt/ui/UIYabause.cpp yabause-0.9.11-patched/src/qt/ui/UIYabause.cpp
+--- yabause-0.9.11/src/qt/ui/UIYabause.cpp	2011-11-28 05:06:46.000000000 +1100
++++ yabause-0.9.11-patched/src/qt/ui/UIYabause.cpp	2011-11-28 19:20:51.000000000 +1100
+@@ -53,7 +53,7 @@
+ 		ui->appendLog( s );
+ 	}
+ 	else {
+-		qWarning( s );
++		qWarning("%s", s );
+ 	}
+ }
+ 

@@ -1,0 +1,12 @@
+diff -urN yabause-0.9.11/src/gtk/CMakeLists.txt yabause-0.9.11-patched/src/gtk/CMakeLists.txt
+--- yabause-0.9.11/src/gtk/CMakeLists.txt	2011-11-28 05:06:45.000000000 +1100
++++ yabause-0.9.11-patched/src/gtk/CMakeLists.txt	2011-11-28 20:43:09.479729078 +1100
+@@ -54,7 +54,7 @@
+ 	yuiwindow.c)
+ 
+ add_executable(yabause-gtk ${yabause_gtk_SOURCES})
+-target_link_libraries(yabause-gtk yabause ${YABAUSE_LIBRARIES} ${PORT_LIBRARIES})
++target_link_libraries(yabause-gtk yabause ${YABAUSE_LIBRARIES} ${PORT_LIBRARIES} m)
+ 
+ yab_port_success(yabause-gtk)
+ configure_file(yabause.desktop.in ${YAB_PORT_NAME}.desktop)

@@ -1,0 +1,12 @@
+diff -urN yabause-0.9.11/src/gtk/CMakeLists.txt yabause-0.9.11-patched/src/gtk/CMakeLists.txt
+--- yabause-0.9.11/src/gtk/CMakeLists.txt	2011-11-28 04:06:45.000000000 +1000
++++ yabause-0.9.11-patched/src/gtk/CMakeLists.txt	2011-11-28 21:18:23.850554045 +1000
+@@ -12,7 +12,7 @@
+ set(PORT_LIBRARIES ${GTK2_LIBRARIES})
+ 
+ if (OPENGL_FOUND)
+-	find_path(GDKGLEXT_CONFIG_INCLUDE_DIR gdkglext-config.h PATHS ${CMAKE_SYSTEM_PREFIX_PATH} PATH_SUFFIXES lib/gtkglext-1.0/include)
++	find_path(GDKGLEXT_CONFIG_INCLUDE_DIR gdkglext-config.h PATHS ${CMAKE_SYSTEM_PREFIX_PATH} PATH_SUFFIXES lib64/gtkglext-1.0/include)
+ 	find_path(GTKGLEXT_INCLUDE_DIR gtk/gtkgl.h PATH_SUFFIXES gtkglext-1.0)
+ 	find_library(GDKGLEXT_LIBRARY gdkglext-x11-1.0)
+ 	find_library(GTKGLEXT_LIBRARY gtkglext-x11-1.0)
