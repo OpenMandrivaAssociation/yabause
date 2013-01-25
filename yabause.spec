@@ -1,5 +1,5 @@
 Name:		yabause
-Version:	0.9.11.1
+Version:	0.9.12
 Release:	1
 
 Summary:	Yabause - A Saturn emulator
@@ -108,73 +108,3 @@ desktop-file-install --vendor="" \
 %{_datadir}/applications/%{name}-qt.desktop
 %{_mandir}/man1/%{name}-qt.1*
 
-%changelog
-* Mon Nov 28 2011 Andrey Bondrov <abondrov@mandriva.org> 0.9.11-1
-+ Revision: 734875
-- New version 0.9.11, switch to cmake
-- Rebuild
-- Updated BuildRequires
-- imported package yabause
-
-
-* Mon Jun  1 2009 Guillaume Bedot <littletux@zarb.org> 0.9.10-1plf2010.0
-- 0.9.10
-
-* Sat Jan 17 2009 Guillaume Bedot <littletux@zarb.org> 0.9.9-1plf2009.1
-- 0.9.9
-
-* Tue Jan  6 2009 Guillaume Bedot <littletux@zarb.org> 0.9.8-1plf2009.1
-- 0.9.8
-
-* Tue Oct 21 2008 Guillaume Bedot <littletux@zarb.org> 0.9.7-1plf2009.1
-- 0.9.7
-- drop outdated patch
-
-* Mon Jun 30 2008 Guillaume Bedot <littletux@zarb.org> 0.9.6-1plf2009.0
-- 0.9.6
-- sub-packages for qt and gtk interfaces
-- obsolete patch removed (workarounded upstream)
-- dropped old menu and related icons
-
-* Thu May 29 2008 Guillaume Bedot <littletux@zarb.org> 0.9.5-1plf2009.0
-- 0.9.5
-- added icons as sources (do not require imagemagick)
-
-* Tue Mar 18 2008 Guillaume Bedot <littletux@zarb.org> 0.9.4-1plf2008.1
-- 0.9.4
-
-* Tue Feb 05 2008 Anssi Hannula <anssi@zarb.org> 0.9.3-2plf2008.1
-- buildrequires desktop-file-utils
-
-* Mon Jan 28 2008 Guillaume Bedot <littletux@zarb.org> 0.9.3-1plf2008.1
-- 0.9.3
-
-* Mon Dec 17 2007 Guillaume Bedot <littletux@zarb.org> 0.9.2-1plf2008.1
-- 0.9.2
-
-* Thu Dec 06 2007 Guillaume Bedot <littletux@zarb.org> 0.9.1-2plf2008.1
-- builreqs
-
-* Tue Nov 27 2007 Guillaume Bedot <littletux@zarb.org> 0.9.1-1plf2008.1
-- 0.9.1
-
-* Wed Jun 27 2007 Guillaume Bedot <littletux@zarb.org> 0.8.5-1plf2008.0
-- 0.8.5
-
-* Wed Mar 21 2007 Guillaume Bedot <littletux@zarb.org> 0.8.0-1plf2007.1
-- 0.8.0
-
-* Fri Sep 01 2006 Guillaume Bedot <littletux@zarb.org> 0.7.1-1plf2007.0
-- 0.7.1
-
-* Wed Aug 30 2006 Anssi Hannula <anssi@zarb.org> 0.7.0-2plf2007.0
-- fix buildrequires
-
-* Tue Aug 22 2006 Guillaume Bedot <littletux@zarb.org> 0.7.0-1plf2007.0
-- 0.7.0, menu, new buildrequires
-
-* Sat Jul 22 2006 Guillaume Bedot <littletux@zarb.org> 0.6.0-2plf2007.0
-- space insteas of tabs, clean install
-
-* Wed Feb 22 2006 Guillaume Bedot <littletux@zarb.org> 0.6.0-1plf
-- First package
