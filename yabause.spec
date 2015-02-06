@@ -1,7 +1,7 @@
 Summary:	Sega Saturn emulator
 Name:		yabause
 Version:	0.9.13
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Emulators
 Url:		http://yabause.sourceforge.net/
