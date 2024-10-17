@@ -4,7 +4,7 @@ Version:	0.9.13
 Release:	2
 License:	GPLv2+
 Group:		Emulators
-Url:		http://yabause.sourceforge.net/
+Url:		https://yabause.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/yabause/%{name}-%{version}.tar.gz
 Patch0:		yabause-0.9.13-cmake.patch
 Patch1:		yabause-0.9.11-link.patch
